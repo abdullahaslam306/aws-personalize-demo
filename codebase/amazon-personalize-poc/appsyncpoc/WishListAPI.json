@@ -1,0 +1,49 @@
+{
+  "api": {
+    "id": "ihxaciyow5ainiaciwmwq4hvca",
+    "arn": "arn:aws:appsync:us-east-1:208638726313:apis/ihxaciyow5ainiaciwmwq4hvca",
+    "name": "WishListAPI"
+  },
+  "lambdas": [
+    {
+      "arn": "arn:aws:lambda:us-east-1:208638726313:function:WishListAPITodoitemsQueryLambda",
+      "name": "WishListAPITodoitemsQueryLambda"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:208638726313:function:WishListAPIDoneitemsQueryLambda",
+      "name": "WishListAPIDoneitemsQueryLambda"
+    }
+  ],
+  "policies": [
+    {
+      "id": "ANPATBE6WKCUZKVLGATJY",
+      "arn": "arn:aws:iam::208638726313:policy/WishListAPITodoitemsQueryDataSourceLambdaPolicy",
+      "name": "WishListAPITodoitemsQueryDataSourceLambdaPolicy",
+      "role_name": "WishListAPITodoitemsQueryDataSourceLambdaRole"
+    },
+    {
+      "id": "ANPATBE6WKCU44XGKKXWW",
+      "arn": "arn:aws:iam::208638726313:policy/WishListAPIDoneitemsQueryDataSourceLambdaPolicy",
+      "name": "WishListAPIDoneitemsQueryDataSourceLambdaPolicy",
+      "role_name": "WishListAPIDoneitemsQueryDataSourceLambdaRole"
+    }
+  ],
+  "roles": [
+    {
+      "id": "AROATBE6WKCU47OOY4RUX",
+      "arn": "arn:aws:iam::208638726313:role/WishListAPICloudWatchLogsRole",
+      "name": "WishListAPICloudWatchLogsRole",
+      "policy_arn": "arn:aws:iam::aws:policy/service-role/AWSAppSyncPushToCloudWatchLogs"
+    },
+    {
+      "id": "AROATBE6WKCUVYWNF7ADT",
+      "arn": "arn:aws:iam::208638726313:role/WishListAPITodoitemsQueryDataSourceLambdaRole",
+      "name": "WishListAPITodoitemsQueryDataSourceLambdaRole"
+    },
+    {
+      "id": "AROATBE6WKCU222WVUMIU",
+      "arn": "arn:aws:iam::208638726313:role/WishListAPIDoneitemsQueryDataSourceLambdaRole",
+      "name": "WishListAPIDoneitemsQueryDataSourceLambdaRole"
+    }
+  ]
+}

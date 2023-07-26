@@ -1,0 +1,49 @@
+{
+  "api": {
+    "id": "znhfdyebffb7foodnqulvvzdsi",
+    "arn": "arn:aws:appsync:us-east-1:208638726313:apis/znhfdyebffb7foodnqulvvzdsi",
+    "name": "MovieLensAPI"
+  },
+  "lambdas": [
+    {
+      "arn": "arn:aws:lambda:us-east-1:208638726313:function:MovieLensAPISimilaritemsQueryLambda",
+      "name": "MovieLensAPISimilaritemsQueryLambda"
+    },
+    {
+      "arn": "arn:aws:lambda:us-east-1:208638726313:function:MovieLensAPIUserpersonalizationsQueryLambda",
+      "name": "MovieLensAPIUserpersonalizationsQueryLambda"
+    }
+  ],
+  "policies": [
+    {
+      "id": "ANPATBE6WKCU3U62GPV3G",
+      "arn": "arn:aws:iam::208638726313:policy/MovieLensAPISimilaritemsQueryDataSourceLambdaPolicy",
+      "name": "MovieLensAPISimilaritemsQueryDataSourceLambdaPolicy",
+      "role_name": "MovieLensAPISimilaritemsQueryDataSourceLambdaRole"
+    },
+    {
+      "id": "ANPATBE6WKCUVM6UDBVX2",
+      "arn": "arn:aws:iam::208638726313:policy/MovieLensAPIUserpersonalizationsQueryDataSourceLambdaPolicy",
+      "name": "MovieLensAPIUserpersonalizationsQueryDataSourceLambdaPolicy",
+      "role_name": "MovieLensAPIUserpersonalizationsQueryDataSourceLambdaRole"
+    }
+  ],
+  "roles": [
+    {
+      "id": "AROATBE6WKCU2MOSHOWMV",
+      "arn": "arn:aws:iam::208638726313:role/MovieLensAPICloudWatchLogsRole",
+      "name": "MovieLensAPICloudWatchLogsRole",
+      "policy_arn": "arn:aws:iam::aws:policy/service-role/AWSAppSyncPushToCloudWatchLogs"
+    },
+    {
+      "id": "AROATBE6WKCU7JHII6HLW",
+      "arn": "arn:aws:iam::208638726313:role/MovieLensAPISimilaritemsQueryDataSourceLambdaRole",
+      "name": "MovieLensAPISimilaritemsQueryDataSourceLambdaRole"
+    },
+    {
+      "id": "AROATBE6WKCU4NIBIYDRK",
+      "arn": "arn:aws:iam::208638726313:role/MovieLensAPIUserpersonalizationsQueryDataSourceLambdaRole",
+      "name": "MovieLensAPIUserpersonalizationsQueryDataSourceLambdaRole"
+    }
+  ]
+}
